@@ -7,11 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
   <body>
-    <% if user_signed_in? %>
-      <%= render "layouts/user_header" %>
-    <% else %>
-      <%= render "layouts/guest_header" %>
-    <% end %>
+    <%= render "layouts/header" %>
 
     <% if notice %>
       <p class="alert alert-success"><%= notice %></p>
