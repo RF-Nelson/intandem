@@ -54,8 +54,6 @@ ActiveRecord::Schema.define(version: 20160703215324) do
     t.string   "body",              default: ""
     t.datetime "created_at",                     null: false
     t.datetime "updated_at",                     null: false
-    t.string   "image_url"
-    t.string   "image_description"
   end
 
   create_table "friendly_id_slugs", force: :cascade do |t|
