@@ -8,6 +8,22 @@
     <%= f.email_field :email, autofocus: true %>
   </div>
 
+  <div class="field">
+    <label for="user_role">Role <i>(leave blank if you don't want to change it)</i></label>
+    <br>
+    <input type = "radio"
+           name="user[role]"
+           id = "Captain"
+           value = "Captain" />
+    <label for = "Captain">Captain</label>
+
+    <input type = "radio"
+           name="user[role]"
+           id = "Stoker"
+           value = "Stoker" />
+    <label for = "Stoker">Stoker</label>
+  </div>
+
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>

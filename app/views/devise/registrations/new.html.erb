@@ -9,6 +9,21 @@
   </div>
 
   <div class="field">
+    <label for="user_role">Role</label>
+    <br>
+    <input type = "radio"
+           name="user[role]"
+           id = "Captain"
+           value = "Captain" />
+    <label for = "Captain">Captain</label>
+
+    <input type = "radio"
+           name="user[role]"
+           id = "Stoker"
+           value = "Stoker" />
+    <label for = "Stoker">Stoker</label>
+  </div>
+  <div class="field">
     <%= f.label :password %>
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
