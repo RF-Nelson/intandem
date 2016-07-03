@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require active_admin/editor/wysiwyg
  */
 
  /* RESET */
@@ -36,7 +37,7 @@
  html, h1, h2, h3, h4, h5, h6, p {
      font-family: 'Helvetica';
  }
- 
+
  ul {
    list-style: none;
  }
