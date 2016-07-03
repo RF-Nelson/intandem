@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   mount Thredded::Engine => '/forum'
-  
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   devise_for :users, controllers: {
@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   root 'welcome#index'
+
+  resources :blog_posts, only: [:show, :index]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
