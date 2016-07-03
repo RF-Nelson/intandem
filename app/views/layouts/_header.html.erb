@@ -1,0 +1,18 @@
+<header class="header">
+  <% if user_signed_in? %>
+    <%= render "layouts/user_header" %>
+  <% else %>
+    <%= render "layouts/guest_header" %>
+  <% end %>
+  <nav class="header-nav group">
+    <ul class="header-list group">
+      <li><a href="">Join Us</a></li>
+      <li><a href="">Events</a></li>
+      <li><a href="">Blog</a></li>
+      <li><a href="">Press</a></li>
+      <li><a href="">Contact</a></li>
+      <li><a href="">Links</a></li>
+      <li><a href="">Support Us</a></li>
+    </ul>
+  </nav>
+</header>
