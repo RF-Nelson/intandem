@@ -10,8 +10,8 @@
         <figcaption><%= blog_post.image_description %></figcaption>
       </figure>
 
-      <div class="">
-        <%= blog_post.body %>
+      <div class="body">
+        <%= blog_post.body.html_safe %>
       </div>
     </div>
   <% end %>
