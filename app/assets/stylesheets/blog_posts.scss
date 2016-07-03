@@ -40,5 +40,15 @@
             font-family: 'Helvetica';
         }
       }
+
+      .body {
+        font-size: 115%;
+        font-family: 'Helvetica';
+        line-height: 1.5;
+
+        a {
+          color: #bc360a;
+        }
+      }
     }
 }
