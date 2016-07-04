@@ -21,6 +21,7 @@ gem 'turbolinks'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem 'activeadmin', github: 'activeadmin'
 gem 'active_admin_editor', github: 'ejholmes/active_admin_editor'
 
 # Use ActiveModel has_secure_password
@@ -32,7 +33,6 @@ gem 'dotenv-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'activeadmin', github: 'activeadmin'
 gem 'thredded', '~> 0.6.2'
 
 group :development, :test do
