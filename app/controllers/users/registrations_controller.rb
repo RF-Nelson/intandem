@@ -1,11 +1,11 @@
 class Users::RegistrationsController < Devise::RegistrationsController
-# before_filter :configure_sign_up_params, only: [:create]
-# before_filter :configure_account_update_params, only: [:update]
+before_filter :configure_sign_up_params, only: [:create]
+before_filter :configure_account_update_params, only: [:update]
 
   # GET /resource/sign_up
-  # def new
-  #   super
-  # end
+  def new
+    super
+  end
 
   # POST /resource
   def create
@@ -13,19 +13,19 @@ class Users::RegistrationsController < Devise::RegistrationsController
   end
 
   # GET /resource/edit
-  # def edit
-  #   super
-  # end
+  def edit
+    super
+  end
 
   # PUT /resource
-  # def update
-  #   super
-  # end
+  def update
+    super
+  end
 
   # DELETE /resource
-  # def destroy
-  #   super
-  # end
+  def destroy
+    super
+  end
 
   # GET /resource/cancel
   # Forces the session data which is usually expired after sign
@@ -39,14 +39,20 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # protected
 
   # If you have extra params to permit, append them to the sanitizer.
-  # def configure_sign_up_params
-  #   devise_parameter_sanitizer.for(:sign_up) << :attribute
-  # end
+  def configure_sign_up_params
+    devise_parameter_sanitizer.for(:sign_up) << :role
+    devise_parameter_sanitizer.for(:sign_up) << :occupation
+    devise_parameter_sanitizer.for(:sign_up) << :own_bike
+    devise_parameter_sanitizer.for(:sign_up) << :name
+  end
 
   # If you have extra params to permit, append them to the sanitizer.
-  # def configure_account_update_params
-  #   devise_parameter_sanitizer.for(:account_update) << :attribute
-  # end
+  def configure_account_update_params
+    devise_parameter_sanitizer.for(:account_update) << :role
+    devise_parameter_sanitizer.for(:account_update) << :occupation
+    devise_parameter_sanitizer.for(:account_update) << :own_bike
+    devise_parameter_sanitizer.for(:account_update) << :name
+  end
 
   # The path used after sign up.
   # def after_sign_up_path_for(resource)

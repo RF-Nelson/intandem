@@ -1,12 +1,54 @@
-<h2>Sign up</h2>
+<h1><em>Sign up</em></h1><br><br>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
   <div class="field">
+    <label for="user_name">Name</label><br>
+    <input autofocus="autofocus" value="" name="user[name]" id="user_name">
+  </div><br>
+
+  <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
+    <%= f.email_field :email %>
+  </div><br>
+
+  <div class="field">
+    <label for="user_occupation">Occupation</label><br>
+    <input value="" name="user[occupation]" id="user_occupation">
+  </div><br>
+
+  <div class="field">
+    <label for="user_role">Role</label>
+    <br>
+    <input type = "radio"
+           name="user[role]"
+           id = "Captain"
+           value = "Captain" />
+    <label for = "Captain">Captain</label>
+
+    <input type = "radio"
+           name="user[role]"
+           id = "Stoker"
+           value = "Stoker" />
+    <label for = "Stoker">Stoker</label>
+  </div><br>
+
+  <div class="field">
+    <label for="user_own_bike">Do you own or have access to a tandem bicycle?</label>
+    <br>
+    <input type = "radio"
+           name="user[own_bike]"
+           id = "No"
+           value = "No" />
+    <label for = "No">No</label>
+
+    <input type = "radio"
+           name="user[own_bike]"
+           id = "Stoker"
+           value = "Yes" />
+    <label for = "Yes">Yes</label>
+  </div><br>
 
   <div class="field">
     <%= f.label :password %>
@@ -14,12 +56,12 @@
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
     <%= f.password_field :password, autocomplete: "off" %>
-  </div>
+  </div><br>
 
   <div class="field">
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
+  </div><br>
 
   <div class="actions">
     <%= f.submit "Sign up" %>

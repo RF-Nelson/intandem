@@ -50,8 +50,9 @@
  input,
  button,
  textarea {
-   -webkit-appearance: none;
-   -moz-appearance: none;
+  //  Can't hide these otherwise the sign-up radio buttons are invisible
+  //  -webkit-appearance: none;
+  //  -moz-appearance: none;
  }
 
  /* CLEARFIX */
