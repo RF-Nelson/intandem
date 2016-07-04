@@ -1,6 +1,10 @@
 <br><br>
-email: <%= @user.email %>
+Name: <%= @user.name %>
 <br><br>
 role: <%= @user.role %>
 <br><br>
-last signed in: <%= @user.last_sign_in_at.to_s.split(" ")[0] %>
+<% if @user.own_bike == "Yes" %>
+  This user owns a tandem bicycle.
+  <br><br>
+<% end %>
+Last signed in on: <%= @user.last_sign_in_at.to_s.split(" ")[0] %>

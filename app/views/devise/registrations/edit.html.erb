@@ -4,9 +4,19 @@
   <%= devise_error_messages! %>
 
   <div class="field">
-    <%= f.label :email %><br />
+    <label for="user_name">Name <i>(leave blank if you don't want to change it)</i></label><br>
+    <input value="" name="user[name]" id="user_name">
+  </div><br>
+
+  <div class="field">
+    <%= f.label :email %><i>(leave blank if you don't want to change it)</i><br />
     <%= f.email_field :email, autofocus: true %>
-  </div>
+  </div><br>
+
+  <div class="field">
+    <label for="user_occupation">Occupation <i>(leave blank if you don't want to change it)</i></label><br>
+    <input value="" name="user[occupation]" id="user_occupation">
+  </div><br>
 
   <div class="field">
     <label for="user_role">Role <i>(leave blank if you don't want to change it)</i></label>
@@ -22,7 +32,23 @@
            id = "Stoker"
            value = "Stoker" />
     <label for = "Stoker">Stoker</label>
-  </div>
+  </div><br>
+
+  <div class="field">
+    <label for="user_own_bike">Do you own or have access to a tandem bicycle? <i>(leave blank if you don't want to change it)</i></label>
+    <br>
+    <input type = "radio"
+           name="user[own_bike]"
+           id = "No"
+           value = "No" />
+    <label for = "No">No</label>
+
+    <input type = "radio"
+           name="user[own_bike]"
+           id = "Stoker"
+           value = "Yes" />
+    <label for = "Yes">Yes</label>
+  </div><br>
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
@@ -31,17 +57,17 @@
   <div class="field">
     <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
     <%= f.password_field :password, autocomplete: "off" %>
-  </div>
+  </div><br>
 
   <div class="field">
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
+  </div><br><br>
 
   <div class="field">
     <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
     <%= f.password_field :current_password, autocomplete: "off" %>
-  </div>
+  </div><br>
 
   <div class="actions">
     <%= f.submit "Update" %>
