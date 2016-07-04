@@ -22,6 +22,8 @@ gem 'turbolinks'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'activeadmin', github: 'activeadmin'
+
+# https://github.com/ejholmes/active_admin_editor/issues/59
 gem 'active_admin_editor', github: 'boontdustie/active_admin_editor'
 
 # Use ActiveModel has_secure_password
