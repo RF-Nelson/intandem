@@ -1,0 +1,194 @@
+.widget {
+    background-color: rgba(247, 245, 231, 0.7);
+    font-size: 14px;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    margin: 0 0 24px;
+    padding: 20px;
+    word-wrap: break-word;
+}
+
+.site-footer {
+  background-color: #39b54a;
+  color: #686758;
+  font-size: 14px;
+  text-align: center;
+
+  .sidebar-container {
+    padding: 20px 0;
+    background-color: #1a1a1a;
+    -webkit-box-shadow: 0px -4px 5px #aaa;
+    -moz-box-shadow: 0px -4px 5px #aaa;
+    box-shadow: 0px -4px 5px #aaa;
+    z-index: 999;
+    position: relative;
+  }
+
+  .widget {
+    background: transparent;
+    color: #fff;
+    float: left;
+    margin-right: 40px;
+    width: 245px;
+  }
+
+  .widget-area {
+      margin: 0 auto;
+      max-width: 1040px;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      height: 623px;
+
+      .widget {
+        color: #e4e4e4;
+
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+        }
+
+        li {
+            padding: 5px 0;
+        }
+
+        a {
+            color: #e4e4e4;
+            text-decoration: none;
+        }
+      }
+
+      #recent-posts-2 {
+        position: absolute;
+        color: #e4e4e4;
+        left: 0px;
+        top: 0px;
+      }
+
+      #archives-2 {
+        position: absolute;
+        color: #e4e4e4;
+        left: 265px;
+        top: 0px;
+      }
+
+      #mailchimpsf_widget-3 {
+        position: absolute;
+        left: 530px;
+        top: 0px;
+      }
+
+      #search-2 {
+        position: absolute;
+        left: 795px;
+        top: 0px;
+      }
+
+      #wptextresize-3 {
+        position: absolute;
+        left: 795px;
+        top: 127px;
+      }
+
+      .widget-title {
+        font: 300 italic 20px "Source Sans Pro", Helvetica, sans-serif;
+        margin: 0 0 10px;
+      }
+
+      h3 {
+        &.widget-title {
+          color: #e4e4e4;
+          font-weight: 700;
+        }
+      }
+  }
+}
+
+.site-info {
+  color: #e4e4e4;
+  background-color: #39b54a;
+  margin: 0 auto;
+  max-width: 1040px;
+  padding: 30px 0;
+  width: 100%;
+}
+
+
+
+// mc-widget
+
+.widget_mailchimpsf_widget .widget-title {
+  line-height: 1.4em;
+  margin-bottom: 0.75em;
+}
+#mc_subheader {
+  line-height: 1.25em;
+  margin-bottom: 18px;
+}
+.mc_merge_var {
+  margin-bottom: 1.0em;
+}
+.mc_var_label,
+.mc_interest_label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+.mc_input {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+.mc_input.mc_phone {
+  width: auto;
+}
+select.mc_select {
+  margin-top: 0.5em;
+  width: 100%;
+}
+.mc_address_label {
+  margin-top: 1.0em;
+  margin-bottom: 0.5em;
+  display: block;
+}
+.mc_address_label ~ select {
+  width: 100%;
+}
+.mc_list li {
+  list-style: none;
+  background: none !important;
+}
+.mc_interests_header {
+  margin-top: 1.0em;
+  margin-bottom: 0.5em;
+}
+.mc_interest label,
+.mc_interest input {
+  margin-bottom: 0.4em;
+}
+#mc_signup_submit {
+  margin-top: 1.5em;
+  width: 80%;
+}
+#mc_unsub_link a {
+  font-size: 0.75em;
+}
+#mc_unsub_link {
+  margin-top: 1.0em;
+}
+.mc_header_address,
+.mc_email_format {
+  display: block;
+  font-weight: bold;
+  margin-top: 1.0em;
+  margin-bottom: 0.5em;
+}
+.mc_email_options {
+  margin-top: 0.5em;
+}
+.mc_email_type {
+  padding-left: 4px;
+}
