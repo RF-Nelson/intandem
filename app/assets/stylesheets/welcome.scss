@@ -1,3 +1,72 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.site-main {
+    position: relative;
+
+    #home_container {
+        width: 100%;
+        margin: 25px 0px 0px 0px;
+        padding-bottom: 50px;
+        min-height: 90px;
+
+        #home_content {
+            width: 800px;
+            margin: 0px auto;
+            position: relative;
+
+            #home_gallery {
+                width: 800px;
+                margin-bottom: 35px;
+
+                a {
+                    color: #ca3c08;
+                    text-decoration: none;
+                }
+
+                a:visited {
+                    color: #ac0404;
+                }
+            }
+
+            #home_side {
+                width: 300px;
+                position: absolute;
+                background-color: #fff;
+                border-top: 5px solid #ddd;
+                right: 0px;
+                margin-bottom: 35px;
+
+                h3 {
+                    font-size: 22px;
+                    margin: 22px 0;
+                }
+            }
+
+            #home_about {
+                width: 465px;
+                min-height: 350px;
+
+                h1 {
+                  margin-top: 0px;
+                }
+
+                h5 {
+                    font-size: 18px;
+                    margin: 30px 0;
+                    color: #141412;
+                }
+
+                a {
+                    color: #ca3c08;
+                    text-decoration: none;
+                }
+
+                a:visited {
+                    color: #ac0404;
+                }
+            }
+        }
+    }
+}
