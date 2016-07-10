@@ -16,6 +16,7 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
   resources :users, only: [:show]
+  resources :join_us, only: [:index]
 
   resources :blog_posts, only: [:show, :index]
 

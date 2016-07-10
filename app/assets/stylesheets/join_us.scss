@@ -1,0 +1,36 @@
+#primary {
+
+  &#content {
+    min-height: 500px;
+    background-color: #fafafa;
+    border-top: 2px solid #ddd;
+  }
+
+  .entry-content {
+    max-width: 600px;
+
+    img {
+      width: 100%;
+      height: auto;
+      margin: 5px 0;
+    }
+
+    a {
+      color: #ca3c08;
+      text-decoration: none;
+    }
+  }
+
+  .entry-header, .entry-content, .entry-summary, .entry-meta {
+    margin: 0 auto;
+    max-width: 604px;
+    width: 100%;
+    margin-bottom: 30px;
+
+      .entry-title {
+        font-weight: normal;
+        margin: 0 0 5px;
+        color: #1a1a1a;
+      }
+  }
+}

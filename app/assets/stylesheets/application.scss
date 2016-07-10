@@ -1,55 +1,77 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- *= require active_admin/editor/wysiwyg
- */
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+* or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the bottom of the
+* compiled file so the styles you add here take precedence over styles defined in any styles
+* defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+* file per style scope.
+*
+*= require_tree .
+*= require_self
+*= require active_admin/editor/wysiwyg
+*/
 
- /* RESET */
- html, body, header, nav, h1, a,
- ul, li, strong, main, button, i,
- section, img, div, h2, p, form,
- fieldset, label,
- span, article, footer, time, small {
-   margin: 0;
-   padding: 0;
-   border: 0;
-   outline: 0;
-   font: inherit;
-   color: inherit;
-   text-align: inherit;
-   text-decoration: inherit;
-   vertical-align: inherit;
-   box-sizing: inherit;
-   background: transparent;
- }
+/* RESET */
+html, body, header, nav, h1, a,
+ul, li, strong, main, button, i,
+section, img, div, h2, p, form,
+fieldset, label,
+span, article, footer, time, small {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ outline: 0;
+ font: inherit;
+ color: inherit;
+ text-align: inherit;
+ text-decoration: inherit;
+ vertical-align: inherit;
+ box-sizing: inherit;
+ background: transparent;
+}
 
- html, h1, h2, h3, h4, h5, h6, p {
-     font-family: 'Helvetica';
- }
+html, h1, h2, h3, h4, h5, h6, p {
+   font-family: 'Helvetica';
+}
 
- ul {
-   list-style: none;
- }
+h1 {
+   font-size: 48px;
+   margin: 33px 0;
+}
 
- a, a:link, a:visited {
-   color: #000;
-   text-decoration: inherit;
- }
+h2 {
+   font-size: 30px;
+   margin: 25px 0;
+}
 
- body {
-   color: #141412;
-   line-height: 1.5;
+ul {
+ list-style: none;
+}
+
+a, a:link, a:visited {
+ color: #000;
+ text-decoration: inherit;
+}
+
+body {
+  color: #141412;
+  line-height: 1.5;
+}
+
+p {
+  margin: 0 0 24px;
+}
+
+html p {
+  font-size: 115%;
+}
+
+strong {
+    font-weight: bold;
 }
 
 embed, iframe, object, video {
