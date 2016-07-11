@@ -16,6 +16,10 @@ In this prototype, the admin credentials are:
 - email: `admin@example.com`
 - password: `password`
 
+To log into the forum as an administrator, login with:
+- email: `captain@captain.com`
+- password: `12345678`
+
 ### Current Features:
 
 Users can:
@@ -35,13 +39,14 @@ From the [admin panel](http://in-tandem.herokuapp.com/admin), one can:
 - [x] Delete users
 - [x] View hidden fields (for example, in the current app users are required to provide an occupation when they sign up. This is not publicly visible in their profile but you can see this info in the admin panel)
 
-forum administrators can
+Forum administrators can:
 - [x] Delete or edit any posts
 - [x] Create new messageboards
 
 
 ### To Do:
-- [] Import Google Calendar events
-- [] Integrate with or migrate from MailChimp
-- [] Export blog posts and data from old WordPress site
-- [] Tie the admin panel users to the forum admin user
+- [ ] Import Google Calendar events
+- [ ] Integrate with or migrate from MailChimp
+- [ ] Export blog posts and data from old WordPress site
+- [ ] Tie the admin panel users to the forum admin user (unify into one single user model)
+- [ ] Discuss design/aesthetics
