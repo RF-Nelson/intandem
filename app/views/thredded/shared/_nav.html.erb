@@ -19,7 +19,7 @@
   <% else %>
     <div class="thredded--main-navigation">
       <%= yield :thredded_breadcrumbs %>
-      <%= render 'thredded/search/form', messageboard: messageboard_or_nil %>
+      <% # Uncomment and add = to interpolate this ruby statement to add search functionality back in: render 'thredded/search/form', messageboard: messageboard_or_nil %>
     </div>
   <% end %>
 </nav>
