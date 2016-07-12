@@ -30,6 +30,8 @@ Users can:
 - [x] Have a profile with personal info
 - [x] Edit their profile
 - [x] View other people's profiles
+- [x] Send private messages to each other
+- [x] See what other users are currently online
 
 From the [admin panel](http://in-tandem.herokuapp.com/admin), one can:
 - [x] Write/edit blog posts
